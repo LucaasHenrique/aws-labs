@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website statico simples para testes de deploy com Docker e AWS.">
+  <title>Deploy Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">Laboratorio DevOps</p>
+      <h1>Website statico simples para deploy com Docker e AWS</h1>
+      <p class="lead">
+        Esta pagina foi pensada para testar containerizacao, push no ECR e publicacao em uma instancia EC2.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="#checklist">Ver checklist</a>
+        <button class="button secondary" id="statusButton" type="button">Atualizar status</button>
+      </div>
+
+      <div class="status-card" aria-live="polite">
+        <span class="status-dot"></span>
+        <div>
+          <strong id="statusText">Pronto para deploy</strong>
+          <p>Conteudo leve, estatico e facil de validar no navegador.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Objetivo</h2>
+        <p>Servir uma pagina HTML simples dentro de um container Nginx.</p>
+      </article>
+
+      <article class="card">
+        <h2>Fluxo</h2>
+        <p>Codigo local, build da imagem, push no ECR e deploy manual na AWS.</p>
+      </article>
+
+      <article class="card" id="checklist">
+        <h2>Checklist</h2>
+        <ul>
+          <li>Website criado</li>
+          <li>Dockerfile apontando para a pasta <span>website/</span></li>
+          <li>Pronto para build e teste local</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Deploy Lab</span>
+    <span id="year"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

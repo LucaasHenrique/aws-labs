@@ -1,0 +1,31 @@
+# Arquivos de documentação
+README.md
+docs/
+*.md
+
+# Arquivos de configuração do projeto
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de backup
+*.backup
+*.bak
