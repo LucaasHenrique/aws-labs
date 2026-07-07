@@ -5,6 +5,16 @@
 .terraform/
 .terraform.lock.hcl
 *.tfplan
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.pem
+id_rsa
+id_ed25519
+key-pair-ec2
+key-pair-ec2.pub
 
 # Local .terraform directories
 **/.terraform/*
